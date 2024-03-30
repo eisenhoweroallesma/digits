@@ -19,7 +19,7 @@ const ListContactsAdmin = () => {
     // Get the Contacts documents
     const contactItems = Contacts.collection.find({}).fetch();
     return {
-      stuffs: contactItems,
+      contacts: contactItems,
       ready: rdy,
     };
   }, []);
