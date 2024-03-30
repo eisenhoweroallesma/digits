@@ -3,7 +3,6 @@ import { Meteor } from 'meteor/meteor';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useTracker } from 'meteor/react-meteor-data';
 import LoadingSpinner from '../components/LoadingSpinner';
-import Contact from '../components/Contact';
 import { Contacts } from '../../api/contact/Contacts';
 import ContactAdmin from '../components/ContactAdmin';
 
@@ -33,7 +32,7 @@ const ListContactsAdmin = () => {
             <h2>List Contacts</h2>
           </Col>
           <Row xs={1} md={2} lg={3} className="g-4">
-            {contacts.map((contact) => (<Col key={ContactAdmin.id}><Contact contact={contact} /></Col>))}
+            {contacts.map((contact) => (<Col key={contact._id}><ContactAdmin contact={contact} /></Col>))}
           </Row>
         </Col>
       </Row>
