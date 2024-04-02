@@ -21,7 +21,7 @@ const ListContacts = () => {
     // Get the Contact documents
     const contactItems = Contacts.collection.find({}).fetch();
     // Get the Note documents
-    const noteItems = Notes.collection({}).fetch();
+    const noteItems = Notes.collection.find({}).fetch();
     return {
       contacts: contactItems,
       notes: noteItems,
