@@ -53,7 +53,7 @@ const AddContact = () => {
                   <Col><TextField name="lastName" /></Col>
                 </Row>
                 <Row>
-                  <Col><TextField name="adress" /></Col>
+                  <Col><TextField name="address" /></Col>
                   <Col><TextField name="image" /></Col>
                 </Row>
                 <LongTextField name="description" />
